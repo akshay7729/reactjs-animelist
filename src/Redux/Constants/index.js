@@ -1,0 +1,5 @@
+export const SEARCH = {
+  LOAD: "SEARCH_LOAD",
+  RESPONSE: "SEARCH_RESPONSE",
+  ERROR: "SEARCH_ERROR",
+};

@@ -1,0 +1,70 @@
+body {
+  background: linear-gradient(to right, #2e51a2, #1b7ac2);
+  color: #fff;
+}
+
+.background-color {
+  background: rgba(255, 255, 255, 0.05);
+}
+.border-radius-0 {
+  border-radius: 0;
+}
+.border-color {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.search-box {
+  @extend .border-radius-0;
+  @extend .background-color;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  @extend .border-color;
+  border-right: transparent;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+  outline: 0;
+  &:focus {
+    @extend .border-color;
+    border-right: transparent;
+    @extend .background-color;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+  }
+}
+.search-btn {
+  @extend .background-color;
+  @extend .border-radius-0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  @extend .border-color;
+  border-left: transparent;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  font-size: 19px;
+  &:focus,
+  &:hover {
+    @extend .background-color;
+    @extend .border-color;
+    border-left: transparent;
+  }
+}
+
+.list-grid {
+  padding-top: 130px;
+  .listcard {
+    display: flex;
+  }
+  .listcard-img {
+    height: 350px;
+  }
+  .listcard-title {
+    color: #000000;
+  }
+}
+.requesting {
+  top: 70px;
+}
