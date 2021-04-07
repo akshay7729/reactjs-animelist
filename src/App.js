@@ -14,9 +14,9 @@ function App() {
     <Provider store={store}>
       <div className="App">
         <Container>
-          <Form />
-          {/* <Search />
-          <List /> */}
+          {/* <Form /> */}
+          <Search />
+          <List />
         </Container>
       </div>
     </Provider>
