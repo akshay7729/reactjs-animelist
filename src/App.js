@@ -3,6 +3,7 @@ import React from "react";
 import "./Styles/App.scss";
 import Search from "./Components/Search";
 import List from "./Components/List";
+import Form from "./Components/Form";
 import Container from "react-bootstrap/Container";
 import { Provider } from "react-redux";
 import configureStore from "./Store";
@@ -13,8 +14,9 @@ function App() {
     <Provider store={store}>
       <div className="App">
         <Container>
-          <Search />
-          <List />
+          <Form />
+          {/* <Search />
+          <List /> */}
         </Container>
       </div>
     </Provider>
